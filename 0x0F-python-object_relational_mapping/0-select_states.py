@@ -3,6 +3,7 @@
 
 from sys import argv
 import MySQLdb
+"""Aca haciendo una consulta a la BD con la barra."""
 
 MY_HOST = "localhost"
 MY_USER = argv[1]
