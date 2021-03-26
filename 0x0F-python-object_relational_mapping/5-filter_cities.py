@@ -17,6 +17,7 @@ if __name__ == "__main__":
         cur.execute("SELECT GROUP_CONCAT(c.name SEPARATOR ', ') FROM states s, cities c where s.id = c.state_id and s.name = %s order by c.id", (STATE_NAME,))
         r = cur.fetchone()
         print(r[0] if r[0] is not None else "")
+        cur.close()
         db.close()
     except Exception as e:
         print("ERROR: {}".format(e))
