@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-Now add a parameter. The right way to avoid SQLi attacks.
+Join the dark side.
 '''
 
 if __name__ == "__main__":
