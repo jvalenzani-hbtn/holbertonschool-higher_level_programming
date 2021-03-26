@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-An easy query to warm up.
+DONT DO THIS. EVER. THIS SCRIPT IS VULNERABLE TO SQLi ATTACKS.
 '''
 
 if __name__ == "__main__":
@@ -10,10 +10,11 @@ if __name__ == "__main__":
     MY_USER = argv[1]
     MY_PASS = argv[2]
     MY_DB = argv[3]
+    STATE_NAME = argv[4]
     try:
         db = MySQLdb.connect(host=MY_HOST, user=MY_USER, passwd=MY_PASS, db=MY_DB)
         cur = db.cursor()
-        cur.execute("SELECT * FROM states ORDER BY id")
+        cur.execute("SELECT * FROM states where name = '{}'".format(STATE_NAME))
         rows = cur.fetchall()
         for r in rows:
             print(r)

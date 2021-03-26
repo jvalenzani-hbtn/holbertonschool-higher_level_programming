@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-An easy query to warm up.
+Now add a parameter. The right way to avoid SQLi attacks.
 '''
 
 if __name__ == "__main__":
@@ -13,7 +13,7 @@ if __name__ == "__main__":
     try:
         db = MySQLdb.connect(host=MY_HOST, user=MY_USER, passwd=MY_PASS, db=MY_DB)
         cur = db.cursor()
-        cur.execute("SELECT * FROM states ORDER BY id")
+        cur.execute("SELECT c.id, c.name, s.name FROM states s, cities c where s.id = c.state_id order by c.id")
         rows = cur.fetchall()
         for r in rows:
             print(r)
