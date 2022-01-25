@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+"""
+Defines a class Rectangle
+"""
 
 class Rectangle:
-
-
+    """Representation of a rectangle"""
+    
     print_symbol = "#"
     
     def __init__(self, width=0, height=0):
