@@ -5,7 +5,7 @@ Defines a class Rectangle
 
 class Rectangle:
     """Representation of a rectangle"""
-    
+
     print_symbol = "#"
     
     def __init__(self, width=0, height=0):
@@ -35,6 +35,11 @@ class Rectangle:
         if h < 0:
             raise ValueError("height must be >= 0")
         self.__height = h
+
+    def __del__(self):
+        """prints a string when an instance has been deleted"""
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
 
     def area(self):
         """returns the area of the rectangle"""
