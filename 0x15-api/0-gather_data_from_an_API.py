@@ -5,6 +5,7 @@ import requests
 from sys import argv
 
 def getTasks(id):
+    """ Retrieve tasks for user """
     url = f'https://jsonplaceholder.typicode.com/todos?userId={id}'
     r = requests.get(url)
     if(r.status_code == 200):
@@ -12,6 +13,7 @@ def getTasks(id):
     return []
 
 def getUser(id):
+    """ Retrieve User info """
     url = f'https://jsonplaceholder.typicode.com/users/{id}'
     r = requests.get(url)
     if(r.status_code == 200):
