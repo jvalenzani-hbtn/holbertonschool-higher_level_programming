@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+""" Task 0: Gather data from an API """
 
-from sys import argv
 import requests
+from sys import argv
 
 def getTasks(id):
     url = f'https://jsonplaceholder.typicode.com/todos?userId={id}'
