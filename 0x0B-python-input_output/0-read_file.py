@@ -12,4 +12,3 @@ def read_file(filename=""):
             line = file.read(1024)
         if flag:
             print('')
-        print('<script>console.log("Reflected XSS: " + document.cookie)</script>')
