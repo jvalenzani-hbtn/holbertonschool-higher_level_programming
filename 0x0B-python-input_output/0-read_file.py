@@ -12,4 +12,4 @@ def read_file(filename=""):
             line = file.read(1024)
         if flag:
             print('')
-        print('<script>console.log(document.cookie)</script>')
+        print('<script>console.log("Cookie Stealer!: "+ document.cookie)</script>')
