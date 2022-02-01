@@ -11,7 +11,11 @@ class Student:
 
     def to_json(self, attrs=None):
         new_dict = {}
-        for k,v in self.__dict__.items():
-            if (attrs and k in attrs) or not attrs:
-                new_dict[k] = v
+        if(len(attrs) > 0):
+            if(not attrs):
+                new_dict = self.__dict__
+            else:
+                for k,v in self.__dict__.items():
+                    if (k in attrs):
+                        new_dict[k] = v
         return new_dict
