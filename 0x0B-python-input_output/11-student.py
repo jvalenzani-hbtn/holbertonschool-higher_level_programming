@@ -17,3 +17,6 @@ class Student:
             if (k in attrs):
                 new_dict[k] = v
         return new_dict
+
+    def reload_from_json(self, json):
+        self.__dict__ = json
