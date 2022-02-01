@@ -1,0 +1,9 @@
+{
+    "name": "0x14-javascript-web_scraping",
+    "version": "1.0.0",
+    "description": "## Learning Objectives - Why JavaScript programming is amazing - How to manipulate JSON data - How to use request and fetch API - How to read and write a file using fs module",
+    "type": "module",
+    "dependencies": {
+        "request": "^2.88.2"
+    }
+}

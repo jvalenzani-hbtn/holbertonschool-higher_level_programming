@@ -2,3 +2,5 @@ aux_*
 __pycache__
 *.txt
 .vscode
+node_modules
+package-lock.json
