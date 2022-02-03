@@ -20,10 +20,10 @@ class TestBaseClass(unittest.TestCase):
         self.assertEqual(b.id, id)
     
     def test_not_num_id(self):
-        # id = "NaN"
-        # b = Base(id)
-        # self.?
-        pass
+        id = "NaN"
+        num = Base.nb_objects()
+        b = Base(id)
+        self.assertEqual(b.id, num+1)
 
 if __name__ == '__main__':
     unittest.main()
