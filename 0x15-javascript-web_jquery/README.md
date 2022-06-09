@@ -46,6 +46,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 ### 0. No JQuery
 - Level: 0
 - Manual review
+
 Write a JavaScript script that updates the text color of the `header` element to red (`#FF0000`):
 
 - You must use `document.querySelector` to select the HTML tag
@@ -81,6 +82,7 @@ javiercito@ubuntu:~/0x15$
 ### 1. Click and turn red
 - Level: 0
 - Manual review
+
 Write a JavaScript script that updates the text color of the `header` element to red (`#FF0000`) when the user clicks on the tag with id `red_header`:
 
 Please test with this HTML file in your browser:
@@ -115,6 +117,7 @@ javiercito@ubuntu:~/0x15$
 ### 2. Add `.red` class
 - Level: 0
 - Manual review
+
 Write a JavaScript script that adds the class `red` to the `header` element when the user clicks on the tag with id `red_header`
 
 Please test with this HTML file in your browser:
@@ -154,6 +157,7 @@ javiercito@ubuntu:~/0x15$
 ### 3. Toggle classes
 - Level: 0
 - Manual review
+
 Write a JavaScript script that toggles the class of the `header` element when the user clicks on the tag id `toggle_header`:
 
 The `header` element must always have one class: `red` or `green`, never both in the same time and never empty.
@@ -199,6 +203,7 @@ javiercito@ubuntu:~/0x15$
 ### 4. List of elements
 - Level: 0
 - Manual review
+
 Write a JavaScript script that adds a `li` element to a list when the user clicks on the element with id `add_item`:
 
 The new element must be: `<li>Item</li>`
@@ -241,6 +246,7 @@ javiercito@ubuntu:~/0x15$
 ### 5. Change the text
 - Level: 0
 - Manual review
+
 Write a JavaScript script that updates the text of the `header` element to `New Header!!!` when the user clicks on the element with id `update_header`
 
 Please test with this HTML file in your browser:
