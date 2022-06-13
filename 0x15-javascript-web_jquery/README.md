@@ -285,8 +285,9 @@ javiercito@ubuntu:~/0x15$
 - Manual review
 Write a JavaScript script that fetches the character `name` from this URL: `https://swapi-api.hbtn.io/api/people/5/?format=json`
 
-The name must be displayed in the HTML tag with id `character`.
-You must use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API). You probably should read something about [usign Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) later.
+- The name must be displayed in the HTML tag with id `character`.
+- You must use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API). 
+- You probably should read something about [usign Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) later.
 
 Please test with this HTML file in your browser:
 ```
@@ -317,4 +318,46 @@ javiercito@ubuntu:~/0x15$
 - GitHub repository: `holbertonschool-higher_level_programming`
 - Directory: `0x15-javascript-web_jquery`
 - File: `6-script.js`
+- Code language: `JavaScript` (project based)
+
+### 7. Star Wars movies
+- Level: 0
+- Manual review
+
+Write a JavaScript script that fetches and lists the `title` for all movies by using this URL: `https://swapi-api.hbtn.io/api/films/?format=json`
+
+- All movie titles must be list in the HTML `ul` element with id `list_movies`
+- You must use the Fetch API.
+
+Please test with this HTML file in your browser:
+
+```
+javiercito@ubuntu:~/0x15$ cat 7-main.html 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+  </head>
+  <body>
+    <header> 
+      Star Wars movies
+    </header>
+    <br />
+    <ul id="list_movies">
+    </ul>
+    <br />
+    <footer>
+      Holberton School - 2022
+    </footer>
+    <script type="text/javascript" src="7-script.js"></script>
+  </body>
+</html>
+javiercito@ubuntu:~/0x15$ 
+```
+
+#### Repo:
+
+- GitHub repository: `holbertonschool-higher_level_programming`
+- Directory: `0x15-javascript-web_jquery`
+- File: `7-script.js`
 - Code language: `JavaScript` (project based)
