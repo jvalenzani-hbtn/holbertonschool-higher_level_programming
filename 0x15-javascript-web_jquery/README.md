@@ -361,3 +361,145 @@ javiercito@ubuntu:~/0x15$
 - Directory: `0x15-javascript-web_jquery`
 - File: `7-script.js`
 - Code language: `JavaScript` (project based)
+
+
+## 9. Say Hello!
+- Level: 0
+- Manual review
+
+Write a JavaScript script that fetches from `https://fourtonfish.com/hellosalut/?lang=fr` and displays the value of `hello` from that fetch in the HTML element with id `hello`.
+
+- The translation of “hello” must be displayed in the HTML element with id `hello`
+- Your script must work when it is imported from the `<head>` tag
+
+Please test with this HTML file in your browser:
+
+```
+javiercito@ubuntu:~/0x15$ cat 8-main.html 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+    <script type="text/javascript" src="8-script.js"></script>
+  </head>
+  <body>
+    <header> 
+      Say Hello!
+    </header>
+    <br />
+    <div id="hello"></div>
+    <br />
+    <footer>
+      Holberton School - 2022
+    </footer>
+  </body>
+</html>
+javiercito@ubuntu:~/0x15$ 
+```
+Repo:
+
+- GitHub repository: `holbertonschool-higher_level_programming`
+- Directory: `0x15-javascript-web_jquery`
+- File: `8-script.js`
+- Code language: `JavaScript` (project based)
+
+## 11. List, add, remove
+- Level: 1
+- Manual review
+
+Write a JavaScript script that adds, removes and clears `li` elements from a list when the user clicks:
+
+- The new element must be: `<li>Item</li>`
+- The new element must be added to the element with id `my_list`
+- When the user clicks on the element with id `add_item`: a new element is added to the list
+- When the user clicks on the element with id `remove_item`: the last element is removed from the list
+- When the user clicks on the element with id `clear_list`: all elements of the list are removed
+You script must work when it imported from the `head` tag
+Please test with this HTML file in your browser:
+
+```
+javiercito@ubuntu:~/0x15$ cat 100-main.html 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+    <script type="text/javascript" src="100-script.js"></script>
+  </head>
+  <body>
+    <header> 
+      First HTML page
+    </header>
+    <br />
+    <div id="add_item">Add item</div>
+    <div id="remove_item">Remove item</div>
+    <div id="clear_list">Clear list</div>
+    <br />
+    <ul class="my_list">
+      <li>Item</li>
+    </ul>
+    <footer>
+      Holberton School - 2022
+    </footer>
+  </body>
+</html>
+javiercito@ubuntu:~/0x15$ 
+```
+
+Repo:
+
+- GitHub repository: `holbertonschool-higher_level_programming`
+- Directory: `0x15-javascript-web_jquery`
+- File: `100-script.js`
+- Code language: `JavaScript` (project based)
+
+## 10. Say hello to everybody!
+- Level: 1
+- Manual review
+
+Write a JavaScript script that fetches and prints how to say “Hello” depending on the language
+
+- You should use this API service: `https://www.fourtonfish.com/hellosalut/hello/`
+- The language code will be the value selected in the combo box with id `language_code` (es, fr, en etc.)
+- The translation must be fetched when the user clicks on element with id `btn_translate`
+- The translation of “Hello” must be displayed in the HTML tag with id `hello`
+- You script must work when imported from the `<head>` tag
+
+Please test with this HTML file in your browser:
+```
+javiercito@ubuntu:~/0x15$ cat 101-main.html 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+    <script type="text/javascript" src="101-script.js"></script>
+  </head>
+  <body>
+    <header> 
+      Say Hello
+    </header>
+    <br />
+    <label for="language_code">Language code:</label>
+    <select name="language" id="language_code">
+        <option value="">--Please choose an option--</option>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+    </select>
+    <input id="btn_translate" type="button" value="Translate"/>
+    <br />
+    <div id="hello"></div>
+    <br />
+    <footer>
+      Holberton School - 2022
+    </footer>
+  </body>
+</html>
+javiercito@ubuntu:~/0x15$ 
+```
+
+### Repo:
+
+- GitHub repository: `holbertonschool-higher_level_programming`
+- Directory: `0x15-javascript-web_jquery`
+- File: `101-script.js`
+- Code language: `JavaScript` (project based)
